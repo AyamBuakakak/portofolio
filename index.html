@@ -5,33 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
     <!-- container 1200*100vh -->
     <div class="container">
-        <nav>
-            <div>
-                <a href="#">
+        <!-- navigation bar start -->
+        <nav class="navbar">
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image/logo oshoppu.png" alt="Oshoppu" class="oshoppu-logo">
                 </a>
             </div>
-
-            <div>
-                <form action="">
-                    <input type="text">
-                    <button></button>
+            <!-- tools -->
+            <div class="tools">
+                <form action="" class="search-box">
+                    <input type="text" placeholder="Cari..." class="search-bar">
+                    <button class="search-button">
+                        <div class="search-icon"><img src="/image/search.png" alt="search"></div>
+                    </button>
                 </form>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                <ul class="navlink">
+                    <li><a href="">warung</a></li>
+                    <li><a href="">masukan</a></li>
+                    <li class="auth"><a href="" class="auth-text">sign in | sign up</a></li>
                 </ul>
             </div>
-            <div>
-                <a href="">
-                    <i></i>
-                    <p>Catat Jajan</p>
+            <!-- note list / cart -->
+            <div class="cart">
+                <a href="#" class="wrapper-button">
+                    <img src="/image/notes.png" alt="notes" class="cart-logo">
+                    <p class="text-cart-logo">Catat Jajan</p>
                 </a>
             </div>
         </nav>
